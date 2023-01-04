@@ -9,37 +9,24 @@ const History = () => {
     {
       value: "2022",
       text: [
-        "11",
-        "건강보험공단 복지용구등록진행",
-        "11",
-        "카톨릭대학 성빈센트병원 MOU 체결",
-        "11",
-        "홍콩 Gerontechnology Platform Test Bed 품목 선정",
-        "10",
-        "홍콩병원협회 디지탈헬스케어 구매품목등록",
-        "10",
-        "뒤셀도르프 Diakonie 요양원 시범도입",
-        "10",
-        "뒤셀도르프 레하케어 전시참가",
-        "10",
-        "온누리요양원 MOU 체결 시법도입 사업진행",
-        "01",
-        "CES 2022 Samsung 관 전시",
+        "11 건강보험공단 복지용구등록진행 ",
+        "11 카톨릭대학 성빈센트병원 MOU 체결",
+        "11 홍콩 Gerontechnology Platform Test Bed 품목 선정",
+        "10 홍콩병원협회 디지탈헬스케어 구매품목등록",
+        "10 뒤셀도르프 Diakonie 요양원 시범도입",
+        "10 뒤셀도르프 레하케어 전시참가",
+        "10 온누리요양원 MOU 체결 시법도입 사업진행",
+        "01 CES 2022 Samsung 관 전시",
       ],
     },
     {
       value: "2021",
       text: [
-        "10",
-        "카톨릭 대학병원 임상 테스트 진행",
-        "10",
-        "홍콩 Delta Pyramax 독점공급계약",
-        "09",
-        "코스트코 캐나다 입점 확정",
-        "06",
-        "엘더리 케어 관련 고려대학교 안암/안산병원, 카톨릭 대학병원, 양평군요양원, 은혜의집 베타테스트 진행",
-        "06",
-        "싱가포르 UnitedBMEC 독점공급계약 체결",
+        "10	카톨릭 대학병원 임상 테스트 진행",
+        "10 홍콩 Delta Pyramax 독점공급계약",
+        "09	코스트코 캐나다 입점 확정",
+        "06	엘더리 케어 관련 고려대학교 안암/안산병원, 카톨릭 대학병원, 양평군요양원, 은혜의집 베타테스트 진행",
+        "06	싱가포르 UnitedBMEC 독점공급계약 체결",
       ],
     },
     {
@@ -85,7 +72,7 @@ const History = () => {
       ],
     },
   ];
-  const [but, setBut] = useState("2022");
+  const [but, setBut] = useState("");
 
   const buttonOnclick = (e) => {
     setBut(e.target.value);
@@ -120,11 +107,13 @@ const History = () => {
       <button value="2017" onClick={buttonOnclick}></button>
 
       <div>
-        <ul>
-          {arr.map((one) => {
-            return <li>{one}</li>;
-          })}
-        </ul>
+        {arr.map((one) => {
+          return (
+            <ul>
+              <li>{one}</li>
+            </ul>
+          );
+        })}
       </div>
     </>
   );

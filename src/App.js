@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import History from "./component/History";
 
 const App = () => {

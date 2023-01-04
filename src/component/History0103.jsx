@@ -1,45 +1,29 @@
 import React, { useEffect, useState } from "react";
-import "../History.scss";
-
-//첫화면에서 2022연혁 나오게 만들기
-//월-설명 글씨체 굵기 다르게..ㅠㅠ
+import "../App.css";
 
 const History = () => {
   const years = [
     {
       value: "2022",
       text: [
-        "11",
-        "건강보험공단 복지용구등록진행",
-        "11",
-        "카톨릭대학 성빈센트병원 MOU 체결",
-        "11",
-        "홍콩 Gerontechnology Platform Test Bed 품목 선정",
-        "10",
-        "홍콩병원협회 디지탈헬스케어 구매품목등록",
-        "10",
-        "뒤셀도르프 Diakonie 요양원 시범도입",
-        "10",
-        "뒤셀도르프 레하케어 전시참가",
-        "10",
-        "온누리요양원 MOU 체결 시법도입 사업진행",
-        "01",
-        "CES 2022 Samsung 관 전시",
+        "11 건강보험공단 복지용구등록진행 ",
+        "11 카톨릭대학 성빈센트병원 MOU 체결",
+        "11 홍콩 Gerontechnology Platform Test Bed 품목 선정",
+        "10 홍콩병원협회 디지탈헬스케어 구매품목등록",
+        "10 뒤셀도르프 Diakonie 요양원 시범도입",
+        "10 뒤셀도르프 레하케어 전시참가",
+        "10 온누리요양원 MOU 체결 시법도입 사업진행",
+        "01 CES 2022 Samsung 관 전시",
       ],
     },
     {
       value: "2021",
       text: [
-        "10",
-        "카톨릭 대학병원 임상 테스트 진행",
-        "10",
-        "홍콩 Delta Pyramax 독점공급계약",
-        "09",
-        "코스트코 캐나다 입점 확정",
-        "06",
-        "엘더리 케어 관련 고려대학교 안암/안산병원, 카톨릭 대학병원, 양평군요양원, 은혜의집 베타테스트 진행",
-        "06",
-        "싱가포르 UnitedBMEC 독점공급계약 체결",
+        "10	카톨릭 대학병원 임상 테스트 진행",
+        "10 홍콩 Delta Pyramax 독점공급계약",
+        "09	코스트코 캐나다 입점 확정",
+        "06	엘더리 케어 관련 고려대학교 안암/안산병원, 카톨릭 대학병원, 양평군요양원, 은혜의집 베타테스트 진행",
+        "06	싱가포르 UnitedBMEC 독점공급계약 체결",
       ],
     },
     {
@@ -85,7 +69,7 @@ const History = () => {
       ],
     },
   ];
-  const [but, setBut] = useState("2022");
+  const [but, setBut] = useState("");
 
   const buttonOnclick = (e) => {
     setBut(e.target.value);
@@ -106,25 +90,35 @@ const History = () => {
   let i;
   let arr = [];
 
-  for (let i = 0; i < p.length; i++) {
+  for (let i = 0; i <= p.length; i++) {
     arr.push(p[i]);
   }
 
   return (
     <>
-      <button value="2022" onClick={buttonOnclick}></button>
-      <button value="2021" onClick={buttonOnclick}></button>
-      <button value="2020" onClick={buttonOnclick}></button>
-      <button value="2019" onClick={buttonOnclick}></button>
-      <button value="2018" onClick={buttonOnclick}></button>
-      <button value="2017" onClick={buttonOnclick}></button>
+      <button value="2022" onClick={buttonOnclick}>
+        2022
+      </button>
+      <button value="2021" onClick={buttonOnclick}>
+        2021
+      </button>
+      <button value="2020" onClick={buttonOnclick}>
+        2020
+      </button>
+      <button value="2019" onClick={buttonOnclick}>
+        2019
+      </button>
+      <button value="2018" onClick={buttonOnclick}>
+        2018
+      </button>
+      <button value="2017" onClick={buttonOnclick}>
+        2017
+      </button>
 
       <div>
-        <ul>
-          {arr.map((one) => {
-            return <li>{one}</li>;
-          })}
-        </ul>
+        {arr.map((one) => {
+          return <div>{one}</div>;
+        })}
       </div>
     </>
   );
