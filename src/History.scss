@@ -5,20 +5,31 @@ button {
   border: orange 8px solid;
   border-radius: 50%;
 }
+
 ul {
   list-style: none;
   li {
     &:nth-child(odd) {
       display: inline-block;
-      width: 20px;
-      color: red;
+      width: 50px;
       font-weight: 600;
-      margin-right: 10px;
+      margin-right: 20px;
     }
-    &:nth-child(2n) {
-      color: blue;
+    &:nth-child(even) {
       display: inline-block;
-      width: calc(100% - 30px);
+      width: calc(100% - 110px);
     }
   }
 }
+// .history{
+//     display: flex;
+// }
+.history-buttonBox {
+  display: flex;
+  flex-direction: column;
+  // width: 30px;
+  // height: 100%;
+}
+// .history-textBox{
+//     padding: 0;
+// }
