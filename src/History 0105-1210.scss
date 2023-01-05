@@ -1,0 +1,70 @@
+@import "./style.scss";
+
+.history{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.history-title{
+  width: 60vw;
+  height: 15vh;
+  text-align: left;
+  display: flex;
+  align-items:flex-end;
+  // line-height:15rem;
+}
+.history-mainBox{
+  width: 65vw;
+  height: 90vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+button:first-child{
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: $color-line-gray;
+}
+button {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: $color-white;
+  border: $color-history-orange 8px solid;
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+  margin-left: 2rem;
+  position: relative;
+  z-index: 999;
+  }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 19px;
+
+  //   width: 2px;
+  //   height: 30vh;
+  //   background-color: $color-line-gray;
+  //   z-index: 1;
+  // }
+
+.history-line{
+  width: 2px;
+  height: 22rem;
+  background-color: $color-line-gray;
+  position: absolute;
+  display: inline-block;
+  left: 18.4rem;
+}
+.history-mainBox {
+  display: flex;
+}
+.history-year {
+}
+ul {
+  list-style: none;
+  margin-left: 2rem;
+}
