@@ -33,8 +33,20 @@
         left: 18.4rem;
         bottom: 1.8em;
       }
+      .history-but1 {
+        position: relative;
 
-      
+        &::before {
+          position: absolute;
+          right: 3rem;
+          content: "2022";
+        }
+        &:checked {
+          color: $color-history-orange;
+          font-weight: $--weight-semi-bold;
+        }
+      }
+
       input {
         appearance: none;
         width: 1.2em;
@@ -63,11 +75,12 @@
           position: relative;
           z-index: 999;
         }
-        &:checked + label{
-          color: $color-history-orange;
-          font-weight: $--weight-semi-bold;
-          background-color: red;
-        }
+
+        // &:checked + label{
+        //   color: $color-history-orange;
+        //   font-weight: $--weight-semi-bold;
+        //   background-color: red;
+        // }
       }
     }
   }
