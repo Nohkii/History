@@ -8,23 +8,36 @@ const History = () => {
       <div className="history-mainBox">
         <div className="history-leftBox">
           <div className="history-line"></div>
-          <span className="history-year">2022</span>
-          <input type='radio' value="2022" name="his" ></input>
+          {/* <span className="history-year">2022</span> */}
+          <label for="1">
+            2022
+            <input type="radio" value="2022" id="1" name="tory"></input>
+          </label>
           <br />
-          <span className="history-year">2021</span>
-          <input type='radio' value="2021" name="his"></input>
+          <label for="2">
+            2021
+            <input type="radio" value="2021" id="2" name="tory"></input>
+          </label>
           <br />
-          <span className="history-year">2020</span>
-          <input type='radio' value="2020" name="his"></input>
+          <label for="3">
+            2020
+            <input type="radio" value="2020" id="3" name="tory"></input>
+          </label>
           <br />
-          <span className="history-year">2019</span>
-          <input type='radio' value="2019" name="his"></input>
+          <label for="4">
+            2019
+            <input type="radio" value="2019" id="4" name="tory"></input>
+          </label>
           <br />
-          <span className="history-year">2018</span>
-          <input type='radio' value="2018" name="his"></input>
+          <label for="5">
+            2018
+            <input type="radio" value="2018" id="5" name="tory"></input>
+          </label>
           <br />
-          <span className="history-year">2017</span>
-          <input type='radio' value="2017" name="his"></input>
+          <label for="6">
+            2017
+            <input type="radio" value="2017" id="6" name="tory"></input>
+          </label>
         </div>
         <ul className="history-textBox">
           <li>연도 누르면 나오는 설명~~</li>

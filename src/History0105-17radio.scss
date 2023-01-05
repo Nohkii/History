@@ -34,7 +34,6 @@
         bottom: 1.8em;
       }
 
-      
       input {
         appearance: none;
         width: 1.2em;
@@ -46,11 +45,11 @@
         position: relative;
         z-index: 999;
 
-        // &:first-child {
-        //   width: 1.2rem;
-        //   height: 1.2rem;
-        //   background-color: $color-line-gray;
-        // }
+        &:first-child {
+          width: 1.2rem;
+          height: 1.2rem;
+          background-color: $color-line-gray;
+        }
         &:checked {
           appearance: none;
           width: 1.7rem;
@@ -62,11 +61,6 @@
           margin-left: 2rem;
           position: relative;
           z-index: 999;
-        }
-        &:checked + label{
-          color: $color-history-orange;
-          font-weight: $--weight-semi-bold;
-          background-color: red;
         }
       }
     }
